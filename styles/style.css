@@ -18,7 +18,7 @@ h1 {
 
 h2 {
     color: #ffffff;
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 900;
 }
 
@@ -227,6 +227,34 @@ header {
     border-radius: 20px;
 }
 
+.gallery-items {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 18px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    gap: 20px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 272px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.team-member {
+    position: relative;
+}
+
+.info-overlay {
+    left: 15px;
+    bottom: 30px;
+    position: absolute;
+    color: white;
+}
+
 @media (min-width: 992px) {
     .container {
         padding-left:25px;
@@ -299,5 +327,32 @@ header {
     .feature-items {
         flex-direction: column;
         gap: 40px;
+    }
+
+    .promo {
+        height: 100%;
+        flex-direction: column; 
+        gap: 30px;
+        padding: 20px;
+    }
+    
+    .promo-section-text {
+        width: 100%;
+        height: auto;
+    }
+    
+    .promo-section-img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .promo-section-img>img{
+        max-width: 300px;
+        height: auto;
+    }
+
+    
+    .gallery-items {
+        grid-template-columns: 1fr;
     }
 }
