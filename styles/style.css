@@ -16,6 +16,12 @@ h1 {
     line-height: 68px;
 }
 
+h2 {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 900;
+}
+
 .shape {
     font-size: 75px;
     font-family: "Pinyon Script", cursive;
@@ -24,6 +30,9 @@ h1 {
 
 .mb-40{
     margin-bottom: 40px;
+}
+.mb-14{
+    margin-bottom: 14px;
 }
 .c-w {
     color: white;
@@ -90,7 +99,7 @@ h1 {
 }
 
 header {
-    height: 100vh;
+    height: 100%;
     background: #2C2C2C;
     /* background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%); */
 }
@@ -103,7 +112,12 @@ header {
 }
 
 .section {
-    margin-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.bg-black {
+    background-color: black;
 }
 
 .hamburger {
@@ -176,6 +190,50 @@ header {
     position: absolute;
 }
 
+.feature-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inner-item {
+    width: 338px;
+    text-align: center;
+}
+.inner-item>img {
+    border-radius: 50%;
+}
+
+.promo {
+    /* height: 312px; */
+    background-color: #222;
+    border-radius: 20px;
+    display: flex;
+    gap: 160px;
+    padding: 60px;
+    align-items: center;
+}
+
+.promo-section-text {
+    width: 443px;
+}
+
+.promo-section-img {
+    width: 50%;
+}
+
+.promo-section-img>img{
+    width: 366px;
+    height: auto;
+    border-radius: 20px;
+}
+
+@media (min-width: 992px) {
+    .container {
+        padding-left:25px;
+        padding-right:25px;
+    }
+}
+
 @media (max-width:576px) {
     .hamburger {
         display: block;
@@ -235,5 +293,11 @@ header {
     .rec-1 {
         top: 62px;
         left: 190px;
+    }
+
+
+    .feature-items {
+        flex-direction: column;
+        gap: 40px;
     }
 }
