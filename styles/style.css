@@ -9,6 +9,15 @@
     /* background-color: #000000; */
 }
 
+body{
+    background-color: #000000;
+    
+}
+ 
+main {
+    overflow: hidden;
+}
+
 h1 {
     color: #ffffff;
     font-size: 72px;
@@ -265,7 +274,7 @@ footer {
     gap: 30px;
 }
 
-.footer-header {
+.footer-header, .bmi-h3 {
     color: white;
     font-size: 24px;
 }
@@ -296,6 +305,80 @@ li{
     text-align: center;
 }
 
+.faq-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-section h2 {
+    text-align: center;
+}
+
+.faq-item h3 {
+    color: white;
+}
+
+.faq-item {
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #222;
+    padding: 20px;
+}
+
+.section-wrap {
+    display: flex;
+    margin: auto;
+}
+
+.bmi-chart, .bmi-calculator {
+    width: 50%;
+}
+
+.bmi-section {
+    background-color: #222222;
+    margin: 0 -100px;
+    padding: 125px;
+}
+
+table, th, td {
+    padding: 10px 25px;
+    border: 2px solid rgba(255, 255, 255, 0.10);
+    border-collapse: collapse;
+  }
+
+th {
+    color: white;
+}
+
+td {
+    color:rgba(255, 255, 255, 0.50);
+}
+
+.input-style {
+    box-sizing: border-box;
+    appearance: none;
+    /* max-width: 200px; */
+    width: 40%;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    color: rgba(255, 255, 255, 0.60);
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.10);
+}
+.input-style-100 {
+    box-sizing: border-box;
+    
+    width: 83%;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    color: rgba(255, 255, 255, 0.60);
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+
 
 @media (min-width: 992px) {
     .container {
@@ -304,6 +387,7 @@ li{
     }
 }
 
+/* mobile version code here */
 @media (max-width:576px) {
     .hamburger {
         display: block;
@@ -412,4 +496,36 @@ li{
     .footer-3 {
         width: 100%;
     }
+
+    .bmi-section {
+    padding-top: 25px;
+    padding-right: 125px;
+    padding-left: 125px;
+    padding-bottom: 25px;
+
+    }
+
+    .section-wrap {
+        flex-direction: column;
+    }
+
+    .bmi-chart, .bmi-calculator {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    table, th, td {
+        padding: 8px 12px;
+    }
+
+    .input-style {
+        width: 49%;
+        margin: 3px 0;
+    }
+
+    .input-style-100 {
+        margin-left: 1px;
+        width: 99%;
+    }
+
 }
