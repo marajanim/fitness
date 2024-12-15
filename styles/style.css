@@ -213,7 +213,7 @@ header {
 }
 
 .promo {
-    /* height: 312px; */
+    justify-content: space-between;
     background-color: #222;
     border-radius: 20px;
     display: flex;
@@ -227,7 +227,7 @@ header {
 }
 
 .promo-section-img {
-    width: 50%;
+    /* width: 50%; */
 }
 
 .promo-section-img>img{
@@ -413,8 +413,9 @@ td {
     }
 
 
-    .btn-primarym, .btn-outline {
-        padding: 12px 20px;
+    .btn-primary, .btn-outline {
+        padding: 12px 16px;
+        font-size: 14px;
     }
 
     h1 {
@@ -468,12 +469,13 @@ td {
     }
     
     .promo-section-img {
-        width: 100%;
+        /* width: 100%; */
         height: auto;
     }
     
     .promo-section-img>img{
-        max-width: 300px;
+        /* max-width: 300px; */
+        width: 100%;
         height: auto;
     }
 
